@@ -1,3 +1,4 @@
+##Fix
 import autopy
 import time
 import win32api, win32con
@@ -47,7 +48,7 @@ def sonlandirici(dadi,dk):
     try:
         #print bitispix
         im = Image.open(dadi)
-        if dk == 50:
+        if dk == 100:
             cut = im.crop((0, 0, 426, bitispix))
         elif dk == 300:
             cut = im.crop((0, 0, 1200, bitispix))
@@ -115,4 +116,3 @@ for s in sonlannalar:
     
 
 print "Tamamlandi. Ismail Cem Yilmaz 1-5-2015 1:40"
-    
